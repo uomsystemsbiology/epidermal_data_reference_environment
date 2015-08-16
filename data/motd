@@ -1,0 +1,9 @@
+This is the Reference Environment for 
+
+Barzel, B. & Barabási, A.-L. 
+Network link prediction by global silencing of indirect correlations. 
+Nat. Biotechnol. 31, 720–5 (2013).  
+
+Run the scripts run_experiments_supplementarysoftware2.sh 
+and run_experiments_supplementarysoftware2.sh in the root directory 
+to execute the code.  

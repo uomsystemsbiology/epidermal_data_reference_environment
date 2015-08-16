@@ -1,11 +1,13 @@
 ### What is this? 
-This is a template for a reference environment.  It has a standard set of scripts to install packages, get code and set things up.  
+This is the reference environment for reproducing the results of the paper by Barzel et al. (2013):
+
+Barzel, B. & Barabási, A.-L. Network link prediction by global silencing of indirect correlations. Nat. Biotechnol. 31, 720–5 (2013).  
 
 ### How do I use it?
 
 ```
-$ git clone https://github.com/uomsystemsbiology/reference_environment_template.git
-$ cd reference_environment_template
+$ git clone https://github.com/uomsystemsbiology/barzel2013network.git
+$ cd barzel2013network
 $ vagrant up
 ```
 This will build a virtual environment and run through each of the scripts with examples

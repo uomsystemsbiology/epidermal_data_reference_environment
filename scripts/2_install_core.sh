@@ -18,16 +18,14 @@ echo Getting the Barzel et al uncompiled code from git | tee -a $log
 mkdir barzel_et_al_2013
 git clone https://github.com/baruchbarzel/NatureBiotech-31-720.git barzel_et_al_2013/code
 
-echo Getting the Barzel et al compiled code from git | tee -a $log
-cp -R /vagrant/data/barzel_et_al_2013/* -t barzel_et_al_2013/
+echo Getting build info from git | tee -a $log
+git --git-dir ~/barzel_et_al_2013/code/.git log --max-count=1 --format=format:"Last Commit: %h%nAuthor: %an%nCommit Date: %ad%n" > /vagrant/temp/build_info.txt
 
-echo Getting code | tee -a $log
-	#git clone https://github.com/uomsystemsbiology/hbgm.git ~/gawcurcra15/Examples
-	#echo Getting build info from git | tee -a $log
-	#git --git-dir ~/gawcurcra15/Examples/.git log --max-count=1 --format=format:"Last Commit: %h%nAuthor: %an%nCommit Date: %ad%n" > /vagrant/temp/build_info.txt
-	echo Writing build info into build_info.txt | tee -a $log
-	printf '\nEnvironment built at ' >> /vagrant/temp/build_info.txt
-	date >> /vagrant/temp/build_info.txt
-echo Got code | tee -a $log
+printf '\nMCR R2015a' >> /vagrant/temp/build_info.txt
+printf '\nEnvironment built at ' >> /vagrant/temp/build_info.txt
+date >> /vagrant/temp/build_info.txt
+
+echo Copying the Barzel et al compiled code from the data directory| tee -a $log
+cp -R /vagrant/data/barzel_et_al_2013/* -t barzel_et_al_2013/
 
 echo Completed install_core.sh | tee -a $log
