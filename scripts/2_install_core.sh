@@ -26,6 +26,6 @@ printf '\nEnvironment built at ' >> /vagrant/temp/build_info.txt
 date >> /vagrant/temp/build_info.txt
 
 echo Copying the Barzel et al compiled code from the data directory| tee -a $log
-cp -R /vagrant/data/barzel_et_al_2013/* -t barzel_et_al_2013/
+cp -R /vagrant/temp/data/barzel_et_al_2013/* -t barzel_et_al_2013/
 
 echo Completed install_core.sh | tee -a $log
