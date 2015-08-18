@@ -1,9 +1,9 @@
-This is the Reference Environment for 
+This is the Reference Environment for reproducing the results of the paper by Barzel et al. (2013):
 
 Barzel, B. & Barabási, A.-L. 
 Network link prediction by global silencing of indirect correlations. 
 Nat. Biotechnol. 31, 720–5 (2013).  
 
 Run the scripts run_experiments_supplementarysoftware2.sh 
-and run_experiments_supplementarysoftware2.sh in the root directory 
-to execute the code.  
+and run_experiments_supplementarysoftware3.sh in the root directory 
+to execute the compiled MATLAB code.  

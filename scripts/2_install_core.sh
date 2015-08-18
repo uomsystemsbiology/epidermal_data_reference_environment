@@ -8,7 +8,7 @@ echo Started install_core.sh | tee -a $log
 
 echo Installing packages | tee -a $log
 sudo apt-get -y update 
-sudo apt-get -y install unzip
+sudo apt-get -y install unzip libxt6 libxtst6
 echo Completed package installation | tee -a $log
 
 echo Getting MATLAB Runtime install files | tee -a $log

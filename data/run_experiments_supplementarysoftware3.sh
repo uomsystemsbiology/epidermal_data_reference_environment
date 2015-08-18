@@ -11,8 +11,8 @@ echo This script executes the MATLAB code in the SupplementarySoftware3 director
 echo of https://github.com/baruchbarzel/NatureBiotech-31-720.git
 
 echo Copying the Barzel et al compiled code into the project directory | tee -a $log
-cp -R /home/sbl/barzel_et_al_2013/compiled/SupplementarySoftware2/* -t /home/sbl/barzel_et_al_2013/code/SupplementarySoftware2
 cp -R /home/sbl/barzel_et_al_2013/compiled/SupplementarySoftware3/* -t /home/sbl/barzel_et_al_2013/code/SupplementarySoftware3 
+sudo chmod 777 /home/sbl/barzel_et_al_2013/code/SupplementarySoftware3/run_RUN.sh
 
 echo Executing SupplementaryScripts3 | tee -a $log
 cd /home/sbl/barzel_et_al_2013/code/SupplementarySoftware3
