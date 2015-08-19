@@ -21,7 +21,7 @@ git clone https://github.com/baruchbarzel/NatureBiotech-31-720.git barzel_et_al_
 echo Getting build info from git | tee -a $log
 git --git-dir ~/barzel_et_al_2013/code/.git log --max-count=1 --format=format:"Last Commit: %h%nAuthor: %an%nCommit Date: %ad%n" > /vagrant/temp/build_info.txt
 
-printf '\nMCR R2015a' >> /vagrant/temp/build_info.txt
+printf 'MCR R2015a' >> /vagrant/temp/build_info.txt
 printf '\nEnvironment built at ' >> /vagrant/temp/build_info.txt
 date >> /vagrant/temp/build_info.txt
 
