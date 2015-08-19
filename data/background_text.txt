@@ -1,7 +1,7 @@
 The default user is 'sbl' password 'sbl'
 This is the reference environment for reproducing the results 
 of the paper by Barzel et al:
-	Barzel, B. & Barabási, A.-L. 
-	Network link prediction by global silencing of indirect correlations. 
-	Nat. Biotechnol. 31, 720_5 (2013).  
+  Barzel, B. & Barabási, A.-L. 
+  Network link prediction by global silencing of indirect correlations. 
+  Nat. Biotechnol. 31, 720_5 (2013).  
 Double-click the scripts below and select 'Execute in Terminal' to run them. 
