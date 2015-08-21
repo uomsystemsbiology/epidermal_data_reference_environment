@@ -1,14 +1,12 @@
 #!/bin/sh
 
-#This is a sample shell script which executes a set of commands to run
-#some code and generate output.  All the executable commands are 
-#commented out.
-
 # Set up logfile
 log=/vagrant/temp/run_experiments.log
 
 echo This script executes the MATLAB code in the SupplementarySoftware2 directory
 echo of https://github.com/baruchbarzel/NatureBiotech-31-720.git
+
+echo Output will be written to /home/sbl/barzel_et_al_2013/code/SupplementarySoftware2/
 
 echo Copying the Barzel et al compiled code into the project directory | tee -a $log
 cp -R /home/sbl/barzel_et_al_2013/compiled/SupplementarySoftware2/* -t /home/sbl/barzel_et_al_2013/code/SupplementarySoftware2

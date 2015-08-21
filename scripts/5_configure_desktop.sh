@@ -24,7 +24,7 @@ echo Creating link from shell script on desktop| tee -a $log
 ln -sv /home/sbl/run_experiments_supplementarysoftware2.sh /home/sbl/Desktop/run_experiments_supplementarysoftware2.sh
 ln -sv /home/sbl/run_experiments_supplementarysoftware3.sh /home/sbl/Desktop/run_experiments_supplementarysoftware3.sh
 printf "[run_experiments_supplementarysoftware2.sh]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
-printf "[run_experiments_supplementarysoftware3.sh]\nx=70\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+printf "[run_experiments_supplementarysoftware3.sh]\nx=90\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 
 echo Removing Trash icon from the desktop
 sudo sed -i "s#\(show_trash *= *\).*#\10#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf

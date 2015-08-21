@@ -6,4 +6,5 @@ Nat. Biotechnol. 31, 720–5 (2013).
 
 Run the scripts run_experiments_supplementarysoftware2.sh 
 and run_experiments_supplementarysoftware3.sh in the root directory 
-to execute the compiled MATLAB code.  
+to execute the compiled MATLAB code.  Detailed instructions
+are provided by the authors in /home/sbl/barzel_et_al_2013/code/readme.md
