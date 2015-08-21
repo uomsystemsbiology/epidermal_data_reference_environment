@@ -53,7 +53,7 @@ config.vm.provider "aws" do |aws,override|
 	override.vm.synced_folder ".", "/vagrant", disabled: true
 	aws.ami = "dummy"
 	aws.region = "us-west-2"
-	aws.instance_type = "t2.micro"
+	aws.instance_type = "t2.small"
         aws.access_key_id = ENV['AWS_ACCESS_KEY_ID']
 	aws.secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
 	aws.security_groups = "launch-wizard-5"
