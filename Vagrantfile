@@ -38,6 +38,7 @@ end
 config.vm.provider "virtualbox" do |vb,override|
 	vb.gui = true
 	override.vm.box = "uomsystemsbiology/base64-vbox"
+	vb.memory = 4096
 end
 
 config.vm.provider "docker" do |docker,override|
