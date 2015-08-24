@@ -7,10 +7,11 @@ Nat. Biotechnol. 31, 720–5 (2013).
 
 ### How do I use it?
 
+Install [Vagrant](http://www.vagrantup.com) and [VirtualBox](http://www.virtualbox.org), then type:
+
 ```
 $ git clone https://github.com/uomsystemsbiology/barzel2013network.git
 $ cd barzel2013network
 $ vagrant up
 ```
-This will build a virtual environment and run through each of the scripts with examples
-of use.  
+This will build a virtual environment, download the code and data, and create scripts to run the code according to the instructions from the authors.  
