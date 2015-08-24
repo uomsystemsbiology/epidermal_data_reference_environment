@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set up logfile
-log=/vagrant/temp/run_experiments.log
+log=/home/sbl/barzel_et_al_2013/run_experiments.log
 
 echo This script executes the MATLAB code in the SupplementarySoftware2 directory
 echo of https://github.com/baruchbarzel/NatureBiotech-31-720.git
