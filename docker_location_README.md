@@ -5,14 +5,15 @@ To find other versions of this reference environment, see Other Links below.  To
 
 ### Instructions for use
 
-This version of the reference environment is a virtual machine managed by [Vagrant](http://www.vagrantup.com).  To use it, install [Vagrant](http://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org/), then do:
+This version of the reference environment is a Docker container.  To use it, install [Docker](https://www.docker.com/), then do:
 
 ```
-$ git clone https://github.com/uomsystemsbiology/barzel2013network.git
-$ cd barzel2013network
-$ vagrant up
+$ docker pull organization_name/project_name
+$ docker run organization_name/project_name /sbin/my_init -- ./run_experiments.sh
 ```
-This will start a virtual machine with scripts to run which reproduce results described in the manuscript.  
+
+
+This will start the container and execute the script which reproduce the results described in the manuscript.  
 
 ### Other links
 
@@ -20,7 +21,7 @@ This will start a virtual machine with scripts to run which reproduce results de
 
 [Project page link](https://github.com/baruchbarzel/NatureBiotech-31-720.git)
 
-[Docker container](https://hub.docker.com/r/uomsystemsbiology/barzel2013network/)
+[Vagrant-managed virtual machine](https://github.com/uomsystemsbiology/barzel2013network_reference_environment)
 
 [Bootable ISO](https://dx.doi.org/10.4225/49/55DA8FA8CE707)
 
