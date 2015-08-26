@@ -8,12 +8,12 @@ To find other versions of this reference environment, see Other Links below.  To
 This version of the reference environment is a Docker container.  To use it, install [Docker](https://www.docker.com/), then do:
 
 ```
-$ docker pull organization_name/project_name
-$ docker run organization_name/project_name /sbin/my_init -- ./run_experiments.sh
+$ docker pull uomsystemsbiology/barzel2013network
+$ docker run uomsystemsbiology/barzel2013network /sbin/my_init -- ./run_experiments_supplementarysoftware2.sh
+$ docker run uomsystemsbiology/barzel2013network /sbin/my_init -- ./run_experiments_supplementarysoftware3.sh
 ```
 
-
-This will start the container and execute the script which reproduce the results described in the manuscript.  
+This will start the container and execute the scripts which reproduce the results described in the manuscript.  
 
 ### Other links
 
