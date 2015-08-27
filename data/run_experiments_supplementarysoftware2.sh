@@ -12,7 +12,7 @@ You can find more information about this research at the
 [Project page](https://github.com/baruchbarzel/NatureBiotech-31-720.git).  
 
 To find other versions of this reference environment, see Other Links below.  
-To learn more about reference environments, [see the detailed description here](http://reference-environments-link.org).  
+To learn more about reference environments, [see the detailed description here](https://uomsystemsbiology.github.io/reference-environments/).  
 
 ### Instructions for use
 
