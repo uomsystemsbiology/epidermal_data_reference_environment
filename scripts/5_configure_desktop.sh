@@ -21,10 +21,10 @@ sudo sed -i "s#\(wallpaper_mode *= *\).*#\1fit#" /home/sbl/.config/pcmanfm/lubun
 sudo sed -i "s#\(desktop_bg *= *\).*#\1\#00447b#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 
 echo Creating link from shell script on desktop| tee -a $log
-ln -sv /home/sbl/run_experiments_supplementarysoftware2.sh /home/sbl/Desktop/run_experiments_supplementarysoftware2.sh
-ln -sv /home/sbl/run_experiments_supplementarysoftware3.sh /home/sbl/Desktop/run_experiments_supplementarysoftware3.sh
-printf "[run_experiments_supplementarysoftware2.sh]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
-printf "[run_experiments_supplementarysoftware3.sh]\nx=110\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+ln -sv /home/sbl/recreate_pMEK_heterogeneity_fig.sh /home/sbl/Desktop/recreate_pMEK_heterogeneity_fig.sh
+ln -sv /home/sbl/create_IF_data_summary.sh /home/sbl/Desktop/create_IF_data_summary.sh
+printf "[recreate_pMEK_heterogeneity_fig.sh]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+printf "[create_IF_data_summary.sh]\nx=110\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 
 echo Removing Trash icon from the desktop
 sudo sed -i "s#\(show_trash *= *\).*#\10#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf

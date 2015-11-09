@@ -1,7 +1,6 @@
 The default user is 'sbl' password 'sbl'
-This is the reference environment for reproducing the results of Barzel et al:
-  Barzel, B. & Barabási, A.-L. 
-  Network link prediction by global silencing of indirect correlations. 
-  Nat. Biotechnol. 31, 720_5 (2013).  
-Double-click the scripts below and select 'Execute in Terminal' to run them.  Detailed instructions
-are provided by the authors in /home/sbl/barzel_et_al_2013/code/readme.md
+This is the reference environment for reproducing the results of Cursons et al:
+  Cursons J, Gao J, Hurley DG, Dunbar PR, Jacobs MD, Crampin EJ. 
+  Regulation of ERK-MAPK signaling in human epidermis. BMC Syst Biol. 2015;9(1):41.  
+
+Double-click the scripts below and select 'Execute in Terminal' to run them. 

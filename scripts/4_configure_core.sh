@@ -5,6 +5,9 @@
 log=/vagrant/temp/install.log
 echo Started configure_core.sh | tee -a $log
 
+echo Unzipping data | tee -a $log
+unzip -q released_data.zip -d epidermal_data
+
 echo Setting up MATLAB Runtime install files | tee -a $log
 unzip -q MCR_R2015a_glnxa64_installer.zip -d MCR_R2015a_glnxa64_installer
 sudo ./MCR_R2015a_glnxa64_installer/install -mode silent -agreeToLicense yes
@@ -20,13 +23,13 @@ echo Copying login message to /etc/motd | tee -a $log
 sudo cp /vagrant/temp/data/motd /etc/motd
 
 echo Copying shell scripts to home directory | tee -a $log
-sudo cp /vagrant/temp/data/run_experiments_supplementarysoftware2.sh /home/sbl/run_experiments_supplementarysoftware2.sh
-sudo cp /vagrant/temp/data/run_experiments_supplementarysoftware3.sh /home/sbl/run_experiments_supplementarysoftware3.sh
-sudo chmod 777 /home/sbl/run_experiments_supplementarysoftware2.sh
-sudo chmod 777 /home/sbl/run_experiments_supplementarysoftware3.sh
+sudo cp /vagrant/temp/data/recreate_pMEK_heterogeneity_fig.sh /home/sbl/recreate_pMEK_heterogeneity_fig.sh
+sudo cp /vagrant/temp/data/create_IF_data_summary.sh /home/sbl/create_IF_data_summary.sh
+sudo chmod 777 /home/sbl/recreate_pMEK_heterogeneity_fig.sh
+sudo chmod 777 /home/sbl/create_IF_data_summary.sh
 
 echo Linking the shell script into the root folder | tee -a $log
-sudo ln -sv /home/sbl/run_experiments_supplementarysoftware2.sh /run_experiments_supplementarysoftware2.sh
-sudo ln -sv /home/sbl/run_experiments_supplementarysoftware3.sh /run_experiments_supplementarysoftware3.sh
+sudo ln -sv /home/sbl/recreate_pMEK_heterogeneity_fig.sh /recreate_pMEK_heterogeneity_fig.sh
+sudo ln -sv /home/sbl/create_IF_data_summary.sh /create_IF_data_summary.sh
 
 echo Completed configure_core.sh | tee -a $log
