@@ -22,14 +22,15 @@ echo Getting the released data
 wget --progress=dot:mega -q -O released_data.zip "https://cloudstor.aarnet.edu.au/plus/index.php/s/T8ILpbE3h1Ut8Yn/download"
 
 echo Getting build info from git | tee -a $log
-git --git-dir ~/epidermal_data/code/.git log --max-count=1 --format=format:"Last Commit: %h%nAuthor: %an%nCommit Date: %ad%n" > /vagrant/temp/build_info.txt
+git --git-dir ~/epidermal_data/.git log --max-count=1 --format=format:"Last Commit: %h%nAuthor: %an%nCommit Date: %ad%n" > /vagrant/temp/build_info.txt
 
 printf 'MCR R2015a' >> /vagrant/temp/build_info.txt
 printf '\nEnvironment built at ' >> /vagrant/temp/build_info.txt
 date >> /vagrant/temp/build_info.txt
 
 echo Copying the compiled MATLAB scripts from the data directory| tee -a $log
-cp -R /vagrant/temp/data/epidermal_data/compiled -t epidermal_data/compiled
+mkdir epidermal_data/compiled
+cp -R /vagrant/temp/data/epidermal_data/compiled/* -t epidermal_data/compiled
 cp /vagrant/temp/data/epidermal_data/compile_epidermal_data.sh epidermal_data/compile_epidermal_data.sh
 
 echo Completed install_core.sh | tee -a $log
