@@ -39,6 +39,8 @@ config.vm.provider "virtualbox" do |vb,override|
 	vb.gui = true
 	override.vm.box = "uomsystemsbiology/base64-vbox"
 	vb.memory = 4096
+	vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+   	vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 end
 
 config.vm.provider "docker" do |docker,override|
